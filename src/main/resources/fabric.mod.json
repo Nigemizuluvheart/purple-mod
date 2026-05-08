@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "envy-mod",
+	"version": "${version}",
+	"name": "envy mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/envy-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.EnvyMod"
+		],
+		"client": [
+			"name.modid.client.EnvyModClient"
+		],
+		"fabric-datagen": [
+			"name.modid.client.EnvyModDataGenerator"
+		]
+	},
+	"mixins": [
+		"envy-mod.mixins.json",
+		{
+			"config": "envy-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
