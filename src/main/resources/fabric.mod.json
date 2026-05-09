@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "envy-mod",
 	"version": "${version}",
-	"name": "envy mod",
-	"description": "Swag like OHIO",
+	"name": "LEAN MOD",
+	"description": "bad trip",
 	"authors": [
 		"NLH"
 	],
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/envy-mod/icon.png",
+	"icon": "assets/envy-mod/icon.jpg",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
