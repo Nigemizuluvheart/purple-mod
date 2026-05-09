@@ -3,20 +3,20 @@
 	"id": "envy-mod",
 	"version": "${version}",
 	"name": "envy mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Swag like OHIO",
 	"authors": [
-		"Me!"
+		"NLH"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/envy-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"name.modid.EnvyMod"
+			"com.NLH.envy.EnvyMod"
 		],
 		"client": [
 			"name.modid.client.EnvyModClient"

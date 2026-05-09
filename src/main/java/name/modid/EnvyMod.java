@@ -1,24 +1,19 @@
-package name.modid;
+package com.NLH.envy; // ここを修正！
 
+import com.NLH.envy.item.ModItemGroups;
+import com.NLH.envy.item.ModItems; // これを追加
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class EnvyMod implements ModInitializer {
 	public static final String MOD_ID = "envy-mod";
-
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups(); //アイテムの登録より先に
+		ModItems.initialize(); // アイテムの登録
+		LOGGER.info("Lean Mod Loaded!");
 	}
 }
