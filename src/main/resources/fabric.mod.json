@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "envy-mod",
+	"id": "lean-mod",
 	"version": "${version}",
 	"name": "LEAN MOD",
 	"description": "bad trip",
@@ -8,30 +8,24 @@
 		"NLH"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/Nigemizuluvheart/modded"
 	},
 	"license": "MIT",
-	"icon": "assets/envy-mod/icon.jpg",
+	"icon": "assets/lean-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.NLH.envy.EnvyMod"
+			"com.NLH.envy.LeanMod"
 		],
 		"client": [
-			"name.modid.client.EnvyModClient"
+			"name.modid.client.LeanModClient"
 		],
 		"fabric-datagen": [
-			"name.modid.client.EnvyModDataGenerator"
+			"name.modid.client.LeanModDataGenerator"
 		]
 	},
-	"mixins": [
-		"envy-mod.mixins.json",
-		{
-			"config": "envy-mod.client.mixins.json",
-			"environment": "client"
-		}
-	],
+
 	"depends": {
 		"fabricloader": ">=0.19.2",
 		"minecraft": "~1.21",

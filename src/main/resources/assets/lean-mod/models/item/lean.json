@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "envy-mod:item/lean"
+    "layer0": "lean-mod:item/lean"
   }
 }

@@ -18,7 +18,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"envy-mod" {
+		"lean-mod" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

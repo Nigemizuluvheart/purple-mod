@@ -1,6 +1,6 @@
 package com.NLH.envy.item;
 
-import com.NLH.envy.EnvyMod;
+import com.NLH.envy.LeanMod;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -43,7 +43,7 @@ public class ModItems {
                         // 1. 飛行を許可
                         player.getAbilities().allowFlying = true;
                         player.sendAbilitiesUpdate();
-                        EnvyMod.LOGGER.info("Flying enabled for 20 seconds!");
+                        LeanMod.LOGGER.info("Flying enabled for 20 seconds!");
 
                         // 2. 20秒後に実行するタスクを予約
                         scheduler.schedule(() -> {
@@ -52,7 +52,7 @@ public class ModItems {
                                 player.getAbilities().allowFlying = false;
                                 player.getAbilities().flying = false; // 飛行中なら落とす
                                 player.sendAbilitiesUpdate();
-                                EnvyMod.LOGGER.info("Flying disabled!");
+                                LeanMod.LOGGER.info("Flying disabled!");
                             }
                         }, 20, TimeUnit.SECONDS); // 20秒後に実行
                     }
@@ -62,10 +62,10 @@ public class ModItems {
     );
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(EnvyMod.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(LeanMod.MOD_ID, name), item);
     }
 
     public static void initialize() {
-        EnvyMod.LOGGER.info("Registering Mod Items for " + EnvyMod.MOD_ID);
+        LeanMod.LOGGER.info("Registering Mod Items for " + LeanMod.MOD_ID);
     }
 }

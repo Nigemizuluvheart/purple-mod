@@ -1,6 +1,6 @@
 {
   "model": {
     "type" : "minecraft:model",
-    "model": "envy-mod:item/lean"
+    "model": "lean-mod:item/lean"
   }
 }

@@ -1,6 +1,6 @@
 package com.NLH.envy.item;
 
-import com.NLH.envy.EnvyMod;
+import com.NLH.envy.LeanMod;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -13,7 +13,7 @@ public class ModItemGroups {
 
     // 1. 独自のクリエイティブタブを定義
     public static final ItemGroup ENVY_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(EnvyMod.MOD_ID, "envy_group"),
+            Identifier.of(LeanMod.MOD_ID, "envy_group"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemgroup.envy_group")) // タブの表示名
                     .icon(() -> new ItemStack(ModItems.LEAN)) // タブのアイコン（リーンの画像になります）
@@ -23,6 +23,6 @@ public class ModItemGroups {
                     }).build());
 
     public static void registerItemGroups() {
-        EnvyMod.LOGGER.info("Registering Item Groups for " + EnvyMod.MOD_ID);
+        LeanMod.LOGGER.info("Registering Item Groups for " + LeanMod.MOD_ID);
     }
 }

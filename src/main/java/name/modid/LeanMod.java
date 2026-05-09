@@ -6,8 +6,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class EnvyMod implements ModInitializer {
-	public static final String MOD_ID = "envy-mod";
+public class LeanMod implements ModInitializer {
+	public static final String MOD_ID = "lean-mod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
